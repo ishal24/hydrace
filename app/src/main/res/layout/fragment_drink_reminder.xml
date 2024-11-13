@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/drink_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daily Water Intake"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1976D2"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <!-- Counter Display -->
+    <TextView
+        android:id="@+id/drink_count_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 Cups"
+        android:textSize="40sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp" />
+
+    <!-- Increment and Decrement Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Decrement Button -->
+        <Button
+            android:id="@+id/decrement_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:text="-"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FF7043"
+            android:background="@drawable/rounded_button" />
+
+        <!-- Spacer -->
+        <Space
+            android:layout_width="24dp"
+            android:layout_height="match_parent" />
+
+        <!-- Increment Button -->
+        <Button
+            android:id="@+id/increment_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:text="+"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#66BB6A"
+            android:background="@drawable/rounded_button" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/notify_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Notify"
+        android:layout_centerInParent="true"/>
+
+</LinearLayout>

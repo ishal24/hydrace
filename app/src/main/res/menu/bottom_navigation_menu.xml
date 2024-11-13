@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--        android:icon="@drawable/ic_drink_reminder_icon"-->
+    <!--add that to add icon-->
+    <item
+        android:id="@+id/nav_drink_reminder"
+        android:title="Reminder"/>
+    <item
+        android:id="@+id/nav_dashboard"
+        android:title="Dashboard"/>
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile"/>
+</menu>
